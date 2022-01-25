@@ -1,3 +1,9 @@
 from django.contrib import admin
+from AppMed.models import EspMedicas, CentroMed, Profesional
 
-# Register your models here.
+admin.site.register(EspMedicas)
+
+admin.site.register(CentroMed)
+
+admin.site.register(Profesional)
+

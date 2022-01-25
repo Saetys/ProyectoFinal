@@ -3,8 +3,8 @@ from AppMed import views
 
 urlpatterns = [
     
-    path('', views.inicio),
-    path('sobreNosotros/', views.sobreNos, name="SobreNosotros"),
+    path('', views.inicio, name="Inicio"),
+    path('quienesSomos/', views.quienesSomos, name="QuienesSomos"),
     path('especialidades/', views.espMedicas, name="Especialidades"),
     path('centros/', views.centroMed, name="Centros"),
     path('profesionales/', views.profesionales, name="Profesionales"),

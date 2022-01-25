@@ -6,9 +6,9 @@ def inicio(request):
     
     return render (request, "AppMed/inicio.html")
 
-def sobreNos(request):
+def quienesSomos(request):
     
-    return render (request, "AppMed/sobreNos.html")
+    return render (request, "AppMed/quienesSomos.html")
 
 def espMedicas(request):
     
