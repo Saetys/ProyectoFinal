@@ -4,16 +4,24 @@ from django.http import HttpResponse
 
 def inicio(request):
     
-    return HttpResponse('vista inicio')
+    return render (request, "AppMed/inicio.html")
+
+def sobreNos(request):
+    
+    return render (request, "AppMed/sobreNos.html")
 
 def espMedicas(request):
     
-    return HttpResponse('vista de especialidades médicas')
+    return render (request, "AppMed/espMedicas.html")
 
 def centroMed(request):
     
-    return HttpResponse('vista de los centros médicos')
+    return render (request, "AppMed/centroMed.html")
 
 def profesionales(request):
     
-    return HttpResponse('vista de los profesionales')
+    return render (request, "AppMed/profesionales.html")
+
+def contacto(request):
+    
+    return render (request, "AppMed/contacto.html")   
