@@ -6,7 +6,7 @@ class EspMedicas(models.Model):
     codigo=models.IntegerField()
     
     def __str__(self):
-        return f'{self.nombre}'
+        return f'{self.nombre} - {self.codigo}'
 
 
 class CentroMed(models.Model):

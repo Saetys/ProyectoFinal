@@ -9,4 +9,7 @@ urlpatterns = [
     path('centros/', views.centroMed, name="Centros"),
     path('profesionales/', views.profesionales, name="Profesionales"),
     path('contacto/', views.contacto, name="Contacto"),
+    path('espMedFormulario/', views.espMedFormulario, name="EspMedFormulario"),
+    path('centroMedFormulario/', views.centroMedFormulario, name="CentroMedFormulario"),
+    path('profFormulario/', views.profFormulario, name="ProfFormulario"),
 ]
