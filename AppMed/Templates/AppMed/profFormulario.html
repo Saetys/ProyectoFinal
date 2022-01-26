@@ -1,32 +1,27 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario - Profesionales</title>
-</head>
-<body>
+{% extends "AppMed/padre.html" %}
+
+{% load static %}
+
+
+{% block contenidoEspecifico %}
+
+    {% if form.errors  %}
+
+        <p style="color: red;"> Datos incorrectos, por favor revíselos</p>
+
+    {% endif %}
     
 
-{% if form.errors  %}
+    <form action="/AppMed/profFormulario/" method="POST">{% csrf_token %}
 
-<p style="color: red;"> Datos incorrectos, por favor revíselos</p>
+        <table>
 
-{% endif %}
+            {{form.as_table}}
+
+        </table>
+
+        <input type="submit" value="Agregar">
     
+    </form>
 
-<form action="/AppMed/profFormulario/" method="POST">{% csrf_token %}
-
-    <table>
-
-        {{form.as_table}}
-
-    </table>
-
-    <input type="submit" value="Agregar">
-    
-</form>
-
-
-</body>
-</html>
+{% endblock contenidoEspecifico %}
